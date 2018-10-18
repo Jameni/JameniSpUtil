@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:onClick="test"
         android:padding="20dp"
-        android:text="Hello World!"
+        android:text="Hello save!"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:onClick="test2"
         android:padding="20dp"
-        android:text="Hello World!"
+        android:text="get!"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

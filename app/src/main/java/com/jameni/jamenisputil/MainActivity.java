@@ -19,14 +19,31 @@ public class MainActivity extends AppCompatActivity {
         infoUtil = new InfoUtil(this);
     }
 
+    boolean isGood;
+
     public void test(View v) {
         index++;
-        infoUtil.setName("name" + index);
+
+//        infoUtil.setAge(index);
+
+//        if (isGood) {
+//            isGood = false;
+//        } else {
+//            isGood = true;
+//        }
+//        infoUtil.setGood(isGood);
+
+//        float a = 0.5f +index;
+//        infoUtil.setPrice(a);
+
+
+        long  b =  10+index;
+        infoUtil.setYear(b);
     }
 
+
     public void test2(View v) {
-        String a = infoUtil.getName();
-        tip(a);
+        tip(""+infoUtil.getYear());
     }
 
     public void tip(String tip) {
