@@ -28,4 +28,5 @@ dependencies {
 
     implementation project(':jamenisplib')
 
+//    implementation 'com.github.Jameni:JameniSpUtil:v1.0.0'
 }

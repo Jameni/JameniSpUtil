@@ -94,16 +94,16 @@ public class JameniSpUtil {
 // ============   获取数据   ===================
 
     //    获取字符串
-    protected String get(String key) {
+    public String get(String key) {
         return get(key, "");
     }
 
-    protected String get(String key, String def) {
+    public String get(String key, String def) {
         return decode(shared.getString(encode(key), def));
     }
 
     //获取布尔型
-    protected boolean getBool(String key, boolean def) {
+    public boolean getBool(String key, boolean def) {
         String value = get(key);
         if (value == null || value.equals("")) {
             return def;
@@ -113,11 +113,11 @@ public class JameniSpUtil {
     }
 
     //获取整形
-    protected int getInt(String key) {
+    public int getInt(String key) {
         return getInt(key, 0);
     }
 
-    protected int getInt(String key, int def) {
+    public int getInt(String key, int def) {
         String value = get(key);
         if (value == null || value.equals("")) {
             return def;
@@ -127,11 +127,11 @@ public class JameniSpUtil {
     }
 
     //    获取长整型
-    protected long getLong(String key) {
+    public long getLong(String key) {
         return getLong(key, 0);
     }
 
-    protected long getLong(String key, long def) {
+    public long getLong(String key, long def) {
         String value = get(key);
         if (value == null || value.equals("")) {
             return def;
@@ -141,11 +141,11 @@ public class JameniSpUtil {
     }
 
     //获取浮点型
-    protected float getFloat(String key) {
+    public float getFloat(String key) {
         return getFloat(key, 0f);
     }
 
-    protected float getFloat(String key, float def) {
+    public float getFloat(String key, float def) {
         String value = get(key);
         if (value == null || value.equals("")) {
             return def;
@@ -157,24 +157,24 @@ public class JameniSpUtil {
 
 // ============   保存数据   ===================
 
-    protected void add(String key, String value) {
+    public void add(String key, String value) {
         editor.putString(encode(key), encode(value));
         editor.commit();
     }
 
-    protected void add(String key, int value) {
+    public void add(String key, int value) {
         add(key, String.valueOf(value));
     }
 
-    protected void add(String key, float value) {
+    public void add(String key, float value) {
         add(key, String.valueOf(value));
     }
 
-    protected void add(String key, long value) {
+    public void add(String key, long value) {
         add(key, String.valueOf(value));
     }
 
-    protected void add(String key, boolean value) {
+    public void add(String key, boolean value) {
         add(key, String.valueOf(value));
     }
 }
