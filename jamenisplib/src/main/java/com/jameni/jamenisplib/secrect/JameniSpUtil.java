@@ -50,7 +50,6 @@ public class JameniSpUtil {
                 result = Base64Util.encode(str);
                 break;
             case SECRECT_TYPE_AES:
-                //待处理
                 result = str;
                 break;
             default:
@@ -74,7 +73,6 @@ public class JameniSpUtil {
                 result = Base64Util.decode(str);
                 break;
             case SECRECT_TYPE_AES:
-                //待处理
                 result = str;
                 break;
             default:
